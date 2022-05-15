@@ -92,8 +92,8 @@ function App() {
   //handle search bar submission and get api data from entered city
   function handleFormSubmit(e) {
     e.preventDefault()
-    getWeatherData(`https://api.openweathermap.org/data/2.5/weather?units=imperial&q=${searchedCity}&appid=b3e82b07216745a340833af606326dac`)
-    getForecastData(`https://api.openweathermap.org/data/2.5/forecast?units=imperial&q=${searchedCity}&appid=b3e82b07216745a340833af606326dac`)
+    getWeatherData(`https://api.openweathermap.org/data/2.5/weather?units=imperial&q=${searchedCity}&appid=${API_KEY}`)
+    getForecastData(`https://api.openweathermap.org/data/2.5/forecast?units=imperial&q=${searchedCity}&appid=${API_KEY}`)
     setSearchedCity("")
   }
 
